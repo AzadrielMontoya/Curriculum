@@ -5,9 +5,42 @@
 }
 
 body {
-    background-color: #0a0908;
+    /* background-color: #0a0908; */
     scrollbar-width: white;
 }
 
+#grid-container {
+    display: grid;
+    grid-template-areas:
+        "slider secction secction"
+        "slider secction secction"
+        "slider secction secction";
+}
 
+.con1 {
+    grid-area: "slider";
+    padding: 30px;
+    background-color: #000814;
+    min-height: 100vh;
+}
 
+div img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+div ul {
+    list-style: none;
+}
+
+div ul li {
+    padding: 10px;
+}
+
+.con2 {
+    grid-area: "secction";
+    padding-left: 30px;
+    background-color: #001d3d;
+}
