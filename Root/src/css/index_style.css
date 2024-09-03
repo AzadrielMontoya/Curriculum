@@ -9,6 +9,12 @@ body {
     scrollbar-width: white;
 }
 
+li {
+    color: white;
+    font-family: "Teko";
+    font-size: 20px;
+}
+
 #grid-container {
     display: grid;
     grid-template-areas:
@@ -22,6 +28,7 @@ body {
     padding: 30px;
     background-color: #000814;
     min-height: 100vh;
+    position: fixed;
 }
 
 div img {
@@ -35,7 +42,7 @@ div ul {
     list-style: none;
 }
 
-div ul li {
+div ul a li {
     padding: 10px;
 }
 
@@ -43,4 +50,13 @@ div ul li {
     grid-area: "secction";
     padding-left: 30px;
     background-color: #001d3d;
+    margin-left: 260px;
+    padding-right: 50px;
+}
+
+.sect-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 50vh;
 }
